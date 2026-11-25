@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MountJuice – Support &amp; Privacy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 48px auto; padding: 0 20px; }
+  h1 { font-size: 2rem; margin-bottom: .2rem; }
+  h2 { margin-top: 2.2rem; border-bottom: 1px solid #8884; padding-bottom: .3rem; }
+  .sub { color: #888; margin-top: 0; }
+  code { background: #8882; padding: 1px 5px; border-radius: 4px; }
+  a { color: #3a9a1f; }
+</style>
+</head>
+<body>
+<img src="icon.png" alt="" width="96" height="96">
+<h1>MountJuice</h1>
+<p class="sub">Keeps your network shares mounted · Mac App Store</p>
+
+<h2>Support</h2>
+<p>Questions or problems? Write to <a href="mailto:alcsernorbert@gmail.com">alcsernorbert@gmail.com</a>. Please include your macOS version, the protocol (SMB, AFP, NFS, WebDAV or FTP) and the lines from <em>Activity Log</em> in the MountJuice menu.</p>
+<ul>
+  <li><strong>Shares in /Volumes:</strong> MountJuice mounts to <code>/Volumes</code> when macOS allows it. Otherwise it uses its own <code>MountJuice Volumes</code> folder; use <em>Show in Finder</em> to open the share.</li>
+  <li><strong>NFS and WebDAV</strong> are mounted through the Finder, because macOS does not allow App Store apps to mount them directly.</li>
+  <li><strong>Wi-Fi rules</strong> need Location Services permission: macOS only tells apps the Wi-Fi name when they have it.</li>
+  <li><strong>Scripts</strong> go into <code>~/Library/Application Scripts/hu.alcser.MountJuice/</code>. Arguments: event, share name, mount point, share address.</li>
+</ul>
+
+<h2>Privacy</h2>
+<p>MountJuice does not collect, store or send any personal data. There are no analytics, no ads and no accounts.</p>
+<ul>
+  <li>Your share settings are stored only on your Mac. Passwords are stored in your macOS keychain and are never exported.</li>
+  <li>MountJuice connects only to the servers you configure (and your local network, to find servers and send Wake-on-LAN packets).</li>
+  <li>Location permission is used only to read the current Wi-Fi network name for Wi-Fi rules. Your location is never stored or sent.</li>
+</ul>
+
+<h2 lang="hu">Magyarul</h2>
+<div lang="hu">
+<p><strong>Támogatás:</strong> írj a <a href="mailto:alcsernorbert@gmail.com">alcsernorbert@gmail.com</a> címre; küldd el a macOS verzióját, a protokollt és az Eseménynapló sorait.</p>
+<p><strong>Adatvédelem:</strong> a MountJuice semmilyen személyes adatot nem gyűjt, nem tárol és nem küld el. A beállítások csak a Maceden vannak, a jelszavakat a kulcskarikád tárolja. A helymeghatározási engedélyt csak a Wi-Fi-hálózat nevének kiolvasására használja.</p>
+</div>
+
+<p class="sub">© 2026 Alcser Norbert</p>
+</body>
+</html>
